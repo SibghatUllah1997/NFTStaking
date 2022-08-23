@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.16+commit.07a7930e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "mintRewards",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/interfaces/IRewardsNFT.sol": "IRewardsNFT"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/interfaces/IRewardsNFT.sol": {
+			"keccak256": "0x2635ab56bca1eca24a8115b2a2a871b993e416553445a063e2857e2196ea9d90",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://81497169c4555944e8661bd5713336507ad4a6d28df1a67af6c4ddf6dc353219",
+				"dweb:/ipfs/QmRZSAp7aH6LrNCXnn7sFfiC1sNSPbwkfbPKz3TMZUXuaJ"
+			]
+		}
+	},
+	"version": 1
+}

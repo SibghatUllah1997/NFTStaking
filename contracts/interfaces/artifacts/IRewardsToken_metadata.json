@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.16+commit.07a7930e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/interfaces/IRewardsToken.sol": "IRewardsToken"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/interfaces/IRewardsToken.sol": {
+			"keccak256": "0xea3022452f5873be996a2d4e64e92f299e171e6eb62442504cbbdac8d3f3a22e",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://5314dcbd12c11ff69823ed2c1b71beed88d8ce352cfff91b02d4ca2a6577d343",
+				"dweb:/ipfs/QmdB11KJ8Kq8z6GqhE19tnrqb83LLsbMJmZRo8dqnhwxm4"
+			]
+		}
+	},
+	"version": 1
+}
