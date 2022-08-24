@@ -41,12 +41,6 @@
 						"internalType": "uint256",
 						"name": "rewardPerWave",
 						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "_rewardPercentage",
-						"type": "uint256"
 					}
 				],
 				"name": "AddStaking",
@@ -175,11 +169,6 @@
 					{
 						"internalType": "uint256[]",
 						"name": "_rewardPerWave",
-						"type": "uint256[]"
-					},
-					{
-						"internalType": "uint256[]",
-						"name": "_rewardPercentage",
 						"type": "uint256[]"
 					}
 				],
@@ -402,7 +391,7 @@
 		"devdoc": {
 			"kind": "dev",
 			"methods": {
-				"addStakingNfts(address[],address[],uint256[],uint256[])": {
+				"addStakingNfts(address[],address[],uint256[])": {
 					"details": "add the address NFT staking addresses and their corresponders",
 					"params": {
 						"_stakeNFT": ", _rewardsToken, _rewardPerWave, _rewardPercentage"
@@ -455,6 +444,9 @@
 			"methods": {
 				"WAVE()": {
 					"notice": "CONSTANTS "
+				},
+				"setLockPeriod(uint256)": {
+					"notice": "SETTERS "
 				}
 			},
 			"version": 1
@@ -525,11 +517,11 @@
 			]
 		},
 		"contracts/MultilevelNftStaking.sol": {
-			"keccak256": "0x6bdd8498797caf6fddc7df27532075b345aac3f3726937437ba9ba014e81507e",
+			"keccak256": "0x9d9accd86c6fc4d751cdf120504be985d814b0e6cbb26838a718f4dffb4e798e",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://25213555993e96d219e11335ca65702952543e8f9253d55d81fc324067747f8e",
-				"dweb:/ipfs/Qmbj6dtBRkD58XUL7JEaEiGe9anefxmFnoCspBoGMAa9jR"
+				"bzz-raw://29f4c2898a251897cf0c366adc8c9b6716ae9357bc86f06dffe5a6ac15ff9ed5",
+				"dweb:/ipfs/QmbvoM5oU7orjt25SUCYcuKFc55k1Sno8C4J4AiTdY3h9p"
 			]
 		},
 		"contracts/interfaces/IRewardsToken.sol": {

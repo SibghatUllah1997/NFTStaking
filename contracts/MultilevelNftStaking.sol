@@ -46,7 +46,7 @@ contract MultilevelNftStaking is Ownable, ReentrancyGuard {
     event NFTLocked(address indexed owner, uint256[] tokenIds);
     event NFTUnLocked(address indexed owner, uint256[] tokenIds);
     event RewardsClaimed(address indexed owner, uint256[] tokenIds, uint256 rewards);
-    event AddStaking(address collection, address rewardToken, uint256 rewardPerWave, uint256 _rewardPercentage);
+    event AddStaking(address collection, address rewardToken, uint256 rewardPerWave);
 
     constructor(
 
@@ -75,8 +75,8 @@ contract MultilevelNftStaking is Ownable, ReentrancyGuard {
     function addStakingNfts(
         address [] memory _stakeNFT,
         address [] memory _rewardsToken,
-        uint256 [] memory _rewardPerWave,
-        uint256 [] memory _rewardPercentage
+        uint256 [] memory _rewardPerWave
+        // uint256 [] memory _rewardPercentage
 
     ) public onlyOwner{
 
@@ -87,14 +87,13 @@ contract MultilevelNftStaking is Ownable, ReentrancyGuard {
 
             nftInfo[IERC721(_stakeNFT[i])].rewardsToken = IRewardsToken(_rewardsToken[i]);
             nftInfo[IERC721(_stakeNFT[i])].rewardsPerWave = _rewardPerWave[i];
-            nftInfo[IERC721(_stakeNFT[i])].rewardPercentage = _rewardPercentage[i];
+            // nftInfo[IERC721(_stakeNFT[i])].rewardPercentage = _rewardPercentage[i];
             
-            emit AddStaking(_stakeNFT[i],_rewardsToken[i], _rewardPerWave[i],_rewardPercentage[i]);
+            emit AddStaking(_stakeNFT[i],_rewardsToken[i], _rewardPerWave[i]);
     }
     }
 
-    /** SETTERS */
-    /**
+    /** SETTERS 
      * @dev update lock period
      * @param _lockPeriod lock period to set
      */
