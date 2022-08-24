@@ -9,5 +9,6 @@ yarn version = 1.22.17
 
 ### How To Run This Project
 firt of all `npm i` or `yarn`
-####truffle compile
+`truffle compile` to compile the code
+
 
